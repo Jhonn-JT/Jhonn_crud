@@ -1,0 +1,86 @@
+
+<div class="card">
+    <div class="card-header">
+       Agregar Estudiante
+    </div>
+    <div class="card-body">
+
+       <form ngNativeValidate [formGroup]="formularioDeEmpleados" (ngSubmit)="enviarDatos()" >
+
+         <div class="mb-3">
+            <label for="" class="form-label">Nombre</label>
+            <input
+            required
+                type="text"
+                class="form-control"
+                name="" formControlName="nombre"
+                id=""
+                aria-describedby="helpId"
+                placeholder="Escribe tu nombre"
+            />
+            
+         </div>
+         <div class="mb-3">
+            <label for="" class="form-label">Apellido</label>
+            <input
+                required
+                type="text"
+                class="form-control"
+                name="" formControlName="correo"
+                id=""
+                aria-describedby="helpId"
+                placeholder="Escribe tu correo"
+            />
+        
+         </div>
+         <!-- agregamos esta linea 03 /////////////// -->
+         <div class="mb-3">
+            <label for="" class="form-label">Curso</label>
+            <input
+                required
+                type="text"
+                class="form-control"
+                name="" formControlName="curso"
+                id=""
+                aria-describedby="helpId"
+                placeholder="Escribe el Curso"
+            />
+        
+         </div>
+         <div class="mb-3">
+            <label for="" class="form-label">Nivel</label>
+            <input
+                required
+                type="text"
+                class="form-control"
+                name="" formControlName="nivel"
+                id=""
+                aria-describedby="helpId"
+                placeholder="Escribe el Nivel"
+            />
+        
+         </div>
+         
+         <div class="btn-group" role="group" aria-label="Button group name">
+            <button
+                type="submit"
+                class="btn btn-dark"
+            >
+                Agregar
+            </button>
+            
+
+            <button
+                type="button"
+                class="btn btn-danger" style="margin-left: 7px;"
+                routerLink="/listar-empleado"
+            >
+                Cancelar
+            </button>
+           
+         </div>
+         
+       </form>
+    </div>
+  
+</div>
