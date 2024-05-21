@@ -1,8 +1,13 @@
 export class Empleado{
     id!:String;
     nombre!:String;
-    correo!:String;
+    precio!:String;
     /////agregamos esta linea 01;
-    curso!:String;
-    nivel!:String;
+    cupo!:String;
+    contacto!:String;
+    descripcion!:String;
+    destino!:String;
+    duracion!:String;
+   
+    
 }

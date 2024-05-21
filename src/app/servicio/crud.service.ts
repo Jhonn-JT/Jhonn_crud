@@ -21,8 +21,8 @@ API:string='http://localhost/empleados/';
   obtenerUnEmpleado(id:any):Observable<any>{
     return this.clienteHttp.get(this.API+"?consultar="+id);
   }
-  editarEmpleado(id:any,datosEmpleados:any):Observable<any>{
-    return this.clienteHttp.post(this.API+"?actualizar="+id,datosEmpleados);
+  editarEmpleado(id:any,datosEmpleado:any):Observable<any>{
+    return this.clienteHttp.post(this.API+"?actualizar="+id,datosEmpleado);
 
   }
 }

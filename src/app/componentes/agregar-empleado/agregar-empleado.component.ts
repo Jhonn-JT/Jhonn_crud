@@ -23,10 +23,14 @@ constructor(
   ){
   this.formularioDeEmpleados=this.formulario.group({
     nombre:[''],
-    correo:[''],
+    precio:[''],
     ///agregamos esta linea 04  //////////////////
-    curso:[''],
-    nivel:['']
+    cupo:[''],
+    contacto:[''],
+    descripcion:[''],
+    destino:[''],
+    duracion:['']
+   
   });
 }
 enviarDatos():any{

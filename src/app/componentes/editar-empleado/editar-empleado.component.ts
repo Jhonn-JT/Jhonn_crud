@@ -4,6 +4,7 @@ import { Router,ActivatedRoute } from '@angular/router';
 import { CrudService } from '../../servicio/crud.service';
 import {FormGroup,FormBuilder} from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { Empleado } from '../../servicio/empleado';
 
 @Component({
   selector: 'app-editar-empleado',
@@ -28,17 +29,25 @@ private ruteador:Router
       console.log(respuesta);
       this.formularioDeEmpleados.setValue({
         nombre:respuesta[0]['nombre'],
-        correo:respuesta[0]['correo'],
-        curso:respuesta[0]['curso'],
-        nivel:respuesta[0]['nivel']
+        precio:respuesta[0]['precio'],
+        cupo:respuesta[0]['cupo'],
+        contacto:respuesta[0]['contacto'],
+        descripcion:respuesta[0]['descripcion'],
+        destino:respuesta[0]['destino'],
+        duracion:respuesta[0]['duracion'],
+       
       });
     }
   );
   this.formularioDeEmpleados=this.formulario.group({
     nombre:[''],
-    correo:[''],
-    curso:[''],
-    nivel:['']
+    precio:[''],
+    cupo:[''],
+    contacto:[''],
+    descripcion:[''],
+    destino:[''],
+    duracion:['']
+  
   });
 }
 
